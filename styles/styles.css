@@ -1,13 +1,84 @@
+:root {
+  --morado : #2b1154;
+  --violeta : #ADA2FF;
+  --lightblue : #C0DEFF;
+  --lightpink : #FFE5F1;
+  --cream : #FFF8E1;
+  --white : #FFF;
+  --black : #000;
+  --color1 : #554994;
+  --color2 : #F675A8;
+  --color3 : #F29393;
+  --color4 : #FFCCB3;
+}
+
+.main-color {
+  background-color: var(--morado);
+  color: var(--white);
+}
+
+.secondary-color {
+  background-color: var(--violeta);
+  color: var(--balck);
+}
+
 html, body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: var(--cream);
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
 }
 
-body {
-  margin: 0;
+body main {
+  flex: 1 auto; 
+  border-color: var(--color1);
+  border-style: solid;
+  border-width: 20px 20px 0px 20px;
 }
 
-footer {
+h1 { font-size: 1.6rem;}
+
+#nav-tab {
+  background-color: transparent;
+  border: transparent;
+}
+
+#nav-tab button {
+  color: var(--morado);
+  background-color: transparent;
+  border: transparent;
+  border-bottom: 1px solid #7b7b7b ;
+}
+
+#nav-tab a {
+  color: var(--morado);
+  background-color: transparent;
+  border: transparent;
+}
+
+
+button:hover, button:focus {
+  border: 1px solid var(--color1);
+}
+
+a:hover, a:focus {
+  border: 1px solid var(--color1);
+}
+
+#footer {
   position: sticky;
   top: 100vh;
+  border-color: var(--color2);
+  border-style: solid;
+  border-width: 0px 20px 20px 20px;
+}
+
+#footer .list-group-item {
+  background-color: transparent;
+  border: transparent;
+}
+
+#footer .list-group a {
+  color: var(--morado);
 }
