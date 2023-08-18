@@ -113,6 +113,19 @@ body main {
   color: var(--color--violeta);
 }
 
+a {
+  color: var(--color--morado);
+}
+
+a:hover, a:focus {
+  background-color: var(--color--morado);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 25px;
+  text-decoration: none;
+}
+
+
 #back2top {
   display: none;
   position: fixed;
@@ -138,24 +151,19 @@ body main {
 
 /* About me */
 #aboutme img {
-  --c: var(--color2); /* the main color */
-  --b: 8px; /* thickness of the border */
-  --o: 25px; /* control the offset */
-  
-  --_p: calc(2*var(--o) + var(--b));
-  padding: var(--_p) var(--_p) 0 0;
-  outline: var(--b) solid var(--c);
-  outline-offset: calc(var(--o) - var(--_p));
+  padding: 0 58px 58px 0;
+  outline: 8px solid var(--color2);
+  outline-offset: -30px;
   transition: .4s;
   cursor: pointer;
 }
 
 #aboutme img + img {
-  padding: var(--_p) 0 0 var(--_p);
+  padding: 58px 0 0 58px;
 }
 
 #aboutme img:hover {
-  padding: calc(var(--_p)/2);
+  padding: calc(58px/2);
 }
 
 /* Curriculum */
@@ -165,11 +173,6 @@ body main {
 }
 
 /* Projects */
-
-#projects a {
-  color: var(--color--morado);
-}
-
 #projects li {
   margin: 20px 0;
 }
