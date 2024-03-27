@@ -151,7 +151,7 @@ a:hover, a:focus {
 
 /* About me */
 #aboutme img {
-  padding: 0 58px 58px 0;
+  padding: 58px 0 0 58px;
   outline: 8px solid var(--color2);
   outline-offset: -30px;
   transition: .4s;
@@ -159,7 +159,7 @@ a:hover, a:focus {
 }
 
 #aboutme img + img {
-  padding: 58px 0 0 58px;
+  padding: 0 58px 58px 0;
 }
 
 #aboutme img:hover {
@@ -185,4 +185,8 @@ a:hover, a:focus {
 
 .separator path {
   filter: drop-shadow(1px 1px 2px rgb(0 0 0 / 0.4));
+}
+
+a {
+  text-underline-offset: 25%;
 }

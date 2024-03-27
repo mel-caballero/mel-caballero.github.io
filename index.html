@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="es" dir="ltr">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- CSS Bootstrap 5.2.3. -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"> 
+  <!-- CSS Bootstrap 5.3.3 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <!-- Personal CSS -->
   <link rel="stylesheet" type="text/css" href="styles/styles.css">
   <meta name="author" content="Melanie Caballero">
@@ -12,76 +13,119 @@
   <link rel="shortcut icon" href="img/favicon.ico">
   <title>Mel Caballero</title>
 </head>
+
 <body id="top" class="container-fluid">
-  <header class="row main-color">
+  <header aria-labelledby="mainTitle" class="row main-color">
     <nav id="header-nav" aria-label="Menú principal" class="navbar navbar-expand-md main-color">
-      <div class="container"><h1>Melanie Caballero</h1>
-        <button class="navbar-toggler" aria-label="Menú desplegable" type="button" aria-controls="menuprincipal" aria-expanded="false" data-bs-toggle="collapse" data-bs-target="#menuprincipal">
-          <svg role="img" class="bi bi-list text-white" aria-hidden="true" width="40" height="40" fill="currentColor" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+      <div class="container">
+        <h1 id="mainTitle">Melanie Caballero</h1>
+        <button class="navbar-toggler" aria-label="Menú desplegable" type="button" aria-controls="menuprincipal"
+          aria-expanded="false" data-bs-toggle="collapse" data-bs-target="#menuprincipal">
+          <svg role="img" class="bi bi-list text-white" aria-hidden="true" width="40" height="40" fill="currentColor"
+            viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd"
+              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
           </svg>
         </button>
         <div id="menuprincipal" class="collapse navbar-collapse">
           <ul class="navbar-nav ms-auto me-2">
             <li class="nav-item">
               <a class="nav-link" href="#aboutme">
-              <svg role="img" class="mx-auto mb-1" aria-hidden="true" width="20" height="20" fill="currentColor" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-                <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
-              </svg>
-              Sobre mi</a></li>
+                <svg role="img" class="mx-auto mb-1" aria-hidden="true" width="20" height="20" fill="currentColor"
+                  viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                </svg>
+                Sobre mi</a>
+            </li>
             <li class="nav-item">
               <a class="nav-link" href="#education">
-              <svg role="img" class="mx-auto mb-1" aria-hidden="true" width="20" height="20" fill="currentColor" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-                <path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917l-7.5-3.5Z"/>
-                <path d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466 4.176 9.032Z"/>
-              </svg>
-              Formación</a></li>
+                <svg role="img" class="mx-auto mb-1" aria-hidden="true" width="20" height="20" fill="currentColor"
+                  viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917l-7.5-3.5Z" />
+                  <path
+                    d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466 4.176 9.032Z" />
+                </svg>
+                Formación</a>
+            </li>
             <li class="nav-item">
               <a class="nav-link" href="#curriculum">
-              <svg role="img" class="mx-auto mb-1" aria-hidden="true" width="20" height="20" fill="currentColor" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-                <path d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v1.384l7.614 2.03a1.5 1.5 0 0 0 .772 0L16 5.884V4.5A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1h-3zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5z"/>
-                <path d="M0 12.5A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5V6.85L8.129 8.947a.5.5 0 0 1-.258 0L0 6.85v5.65z"/>
-              </svg>
-              Experiencia</a></li>
+                <svg role="img" class="mx-auto mb-1" aria-hidden="true" width="20" height="20" fill="currentColor"
+                  viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v1.384l7.614 2.03a1.5 1.5 0 0 0 .772 0L16 5.884V4.5A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1h-3zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5z" />
+                  <path
+                    d="M0 12.5A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5V6.85L8.129 8.947a.5.5 0 0 1-.258 0L0 6.85v5.65z" />
+                </svg>
+                Experiencia</a>
+            </li>
             <li class="nav-item">
               <a class="nav-link" href="#projects">
-              <svg role="img" class="mx-auto mb-1" aria-hidden="true" width="20" height="20" fill="currentColor" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" d="M6.5 0A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3Zm3 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3Z"/>
-                <path fill-rule="evenodd" d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1A2.5 2.5 0 0 1 9.5 5h-3A2.5 2.5 0 0 1 4 2.5v-1Zm4 5.982c1.664-1.673 5.825 1.254 0 5.018-5.825-3.764-1.664-6.69 0-5.018Z"/>
-              </svg>
-              Proyectos</a></li>
+                <svg role="img" class="mx-auto mb-1" aria-hidden="true" width="20" height="20" fill="currentColor"
+                  viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd"
+                    d="M6.5 0A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3Zm3 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3Z" />
+                  <path fill-rule="evenodd"
+                    d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1A2.5 2.5 0 0 1 9.5 5h-3A2.5 2.5 0 0 1 4 2.5v-1Zm4 5.982c1.664-1.673 5.825 1.254 0 5.018-5.825-3.764-1.664-6.69 0-5.018Z" />
+                </svg>
+                Proyectos</a>
+            </li>
             <li class="nav-item">
               <a class="nav-link" href="#events">
-              <svg role="img" class="mx-auto mb-1" aria-hidden="true" width="20" height="20" fill="currentColor" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-                <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z"/>
-                <path d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z"/>
-              </svg>
-              Eventos</a></li>
+                <svg role="img" class="mx-auto mb-1" aria-hidden="true" width="20" height="20" fill="currentColor"
+                  viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z" />
+                  <path
+                    d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z" />
+                </svg>
+                Eventos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://mel-caballero.github.io/guide/" target="_blank">
+                <svg role="img" class="mx-auto mb-1" aria-hidden="true"  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bookmark-heart-fill" viewBox="0 0 16 16">
+                  <path d="M2 15.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2zM8 4.41c1.387-1.425 4.854 1.07 0 4.277C3.146 5.48 6.613 2.986 8 4.412z"/>
+                </svg>
+                Guía de accesibilidad
+                <svg role="img" class="mx-auto mb-1" aria-label="Abre una nueva ventana" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+                  <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+                </svg>
+              </a></li>
           </ul>
         </div>
       </div>
     </nav>
   </header>
   <main class="row p-5">
-    <section id="aboutme" class="container">    
+    <section id="aboutme" class="container">
       <h2>
-        <svg role="img" class="mx-auto me-2 mb-3" aria-hidden="true" width="30" height="30" fill="currentColor" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-          <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+        <svg role="img" class="mx-auto me-2 mb-3" aria-hidden="true" width="30" height="30" fill="currentColor"
+          viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+          <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
         </svg>
         Sobre mi
       </h2>
       <div class="row pt-3">
-        <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 p-3 d-flex justify-content-center">
-          <img src="img/mel.jpg" width="80%" alt="Fotografía de Melanie Caballero">
+        <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 d-flex">
+          <img src="img/mel.jpg" height="80%" alt="Fotografía de Melanie Caballero">
         </div>
         <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12">
-          <h3>Consultora Accesibilidad & Developer</h3>
-          <p>Cursando Integración Social tomé consciencia de la brecha digital existente y quise tomar cartas sobre el asunto.</p>
-          <p>Por esa razón decidí estudiar Desarrollo de Aplicaciones Multiplataforma y continuar con el Desarrollo Web.</p>
-          <p>Mezclando así mis dos pasiones, el mundo social y la tecnología para finalmente especializarme en la accesibilidad digital.</p>
-          <h3>Aptitudes</h3>
-          <p>Soy creativa, detallista, curiosa, empática y con una sensibilidad especial, estos son algunos de los rasgos que me definen desde pequeña.</p>
-          <p>Con el tiempo y las experiencias de la vida me han convertido también en una persona respetuosa, intuitiva e ingeniosa a la que le gusta siempre afrontarse a nuevos retos.</p>
+          <p>¡Hola! Soy Melanie Caballero, una apasionada de la tecnología y la inclusión digital. Mi camino hacia el
+            mundo de la accesibilidad comenzó mientras cursaba Integración Social, donde me di cuenta de la enorme
+            brecha digital que existe y decidí tomar medidas al respecto.</p>
+          <p>Motivada por mi interés en cerrar esa brecha y facilitar el acceso a la tecnología para todos, me embarqué
+            en el estudio de Desarrollo de Aplicaciones Multiplataforma y continué con el Desarrollo Web. Esta
+            combinación de habilidades me ha permitido fusionar mis dos pasiones: el mundo social y la tecnología, para
+            especializarme en la accesibilidad digital.</p>
+          <p>Me considero una persona creativa, detallista y empática, con una sensibilidad especial para comprender las
+            necesidades de los demás. A lo largo de mi vida, he cultivado habilidades como la intuición, el ingenio y el
+            respeto, que me han ayudado a enfrentar nuevos retos con confianza y determinación.</p>
+          <p>Mi objetivo es utilizar mis conocimientos y experiencia en desarrollo web y accesibilidad digital para
+            crear soluciones tecnológicas inclusivas que mejoren la vida de todas las personas, independientemente de
+            sus capacidades. Creo firmemente que la tecnología tiene el poder de derribar barreras y construir un mundo
+            más accesible y equitativo para todos.</p>
+          <p>¡Es un placer compartir mi pasión contigo para hacer que la web sea un lugar más inclusivo y accesible para
+            todos!</p>
         </div>
       </div>
     </section>
@@ -92,46 +136,59 @@
     </svg>
     <section id="education" class="container">
       <h2>
-        <svg role="img" class="mx-auto me-2 mb-3" aria-hidden="true" width="30" height="30" fill="currentColor" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-          <path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917l-7.5-3.5Z"/>
-          <path d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466 4.176 9.032Z"/>
+        <svg role="img" class="mx-auto me-2 mb-3" aria-hidden="true" width="30" height="30" fill="currentColor"
+          viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917l-7.5-3.5Z" />
+          <path
+            d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466 4.176 9.032Z" />
         </svg>
         Formación
       </h2>
       <div class="row pt-3">
         <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 container">
           <div class="row py-4">
-            <svg role="img" class="bi bi-globe2" aria-hidden="true" width="150" height="150" fill="currentColor" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855-.143.268-.276.56-.395.872.705.157 1.472.257 2.282.287V1.077zM4.249 3.539c.142-.384.304-.744.481-1.078a6.7 6.7 0 0 1 .597-.933A7.01 7.01 0 0 0 3.051 3.05c.362.184.763.349 1.198.49zM3.509 7.5c.036-1.07.188-2.087.436-3.008a9.124 9.124 0 0 1-1.565-.667A6.964 6.964 0 0 0 1.018 7.5h2.49zm1.4-2.741a12.344 12.344 0 0 0-.4 2.741H7.5V5.091c-.91-.03-1.783-.145-2.591-.332zM8.5 5.09V7.5h2.99a12.342 12.342 0 0 0-.399-2.741c-.808.187-1.681.301-2.591.332zM4.51 8.5c.035.987.176 1.914.399 2.741A13.612 13.612 0 0 1 7.5 10.91V8.5H4.51zm3.99 0v2.409c.91.03 1.783.145 2.591.332.223-.827.364-1.754.4-2.741H8.5zm-3.282 3.696c.12.312.252.604.395.872.552 1.035 1.218 1.65 1.887 1.855V11.91c-.81.03-1.577.13-2.282.287zm.11 2.276a6.696 6.696 0 0 1-.598-.933 8.853 8.853 0 0 1-.481-1.079 8.38 8.38 0 0 0-1.198.49 7.01 7.01 0 0 0 2.276 1.522zm-1.383-2.964A13.36 13.36 0 0 1 3.508 8.5h-2.49a6.963 6.963 0 0 0 1.362 3.675c.47-.258.995-.482 1.565-.667zm6.728 2.964a7.009 7.009 0 0 0 2.275-1.521 8.376 8.376 0 0 0-1.197-.49 8.853 8.853 0 0 1-.481 1.078 6.688 6.688 0 0 1-.597.933zM8.5 11.909v3.014c.67-.204 1.335-.82 1.887-1.855.143-.268.276-.56.395-.872A12.63 12.63 0 0 0 8.5 11.91zm3.555-.401c.57.185 1.095.409 1.565.667A6.963 6.963 0 0 0 14.982 8.5h-2.49a13.36 13.36 0 0 1-.437 3.008zM14.982 7.5a6.963 6.963 0 0 0-1.362-3.675c-.47.258-.995.482-1.565.667.248.92.4 1.938.437 3.008h2.49zM11.27 2.461c.177.334.339.694.482 1.078a8.368 8.368 0 0 0 1.196-.49 7.01 7.01 0 0 0-2.275-1.52c.218.283.418.597.597.932zm-.488 1.343a7.765 7.765 0 0 0-.395-.872C9.835 1.897 9.17 1.282 8.5 1.077V4.09c.81-.03 1.577-.13 2.282-.287z"/>
-          </svg>
-          </div>
-          <div class="row">
-            <h3 class="py-3 text-center">Integración Social</h3>
-            <p>Desarrollo, implantación, documentación y mantenimiento de aplicaciones web utilizando tecnologías específicas,
-            cumpliendo los criterios de accesibilidad, usabilidad y calidad exigidas en los estándares establecidos.</p>
-          </div> 
-        </div>
-        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 container">
-          <div class="row py-4">
-            <svg role="img" class="bi bi-laptop" aria-hidden="true" width="150" height="150" fill="currentColor" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-              <path d="M13.5 3a.5.5 0 0 1 .5.5V11H2V3.5a.5.5 0 0 1 .5-.5h11zm-11-1A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2h-11zM0 12.5h16a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5z"/>
+            <svg role="img" class="bi bi-globe2" aria-hidden="true" width="150" height="150" fill="currentColor"
+              viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855-.143.268-.276.56-.395.872.705.157 1.472.257 2.282.287V1.077zM4.249 3.539c.142-.384.304-.744.481-1.078a6.7 6.7 0 0 1 .597-.933A7.01 7.01 0 0 0 3.051 3.05c.362.184.763.349 1.198.49zM3.509 7.5c.036-1.07.188-2.087.436-3.008a9.124 9.124 0 0 1-1.565-.667A6.964 6.964 0 0 0 1.018 7.5h2.49zm1.4-2.741a12.344 12.344 0 0 0-.4 2.741H7.5V5.091c-.91-.03-1.783-.145-2.591-.332zM8.5 5.09V7.5h2.99a12.342 12.342 0 0 0-.399-2.741c-.808.187-1.681.301-2.591.332zM4.51 8.5c.035.987.176 1.914.399 2.741A13.612 13.612 0 0 1 7.5 10.91V8.5H4.51zm3.99 0v2.409c.91.03 1.783.145 2.591.332.223-.827.364-1.754.4-2.741H8.5zm-3.282 3.696c.12.312.252.604.395.872.552 1.035 1.218 1.65 1.887 1.855V11.91c-.81.03-1.577.13-2.282.287zm.11 2.276a6.696 6.696 0 0 1-.598-.933 8.853 8.853 0 0 1-.481-1.079 8.38 8.38 0 0 0-1.198.49 7.01 7.01 0 0 0 2.276 1.522zm-1.383-2.964A13.36 13.36 0 0 1 3.508 8.5h-2.49a6.963 6.963 0 0 0 1.362 3.675c.47-.258.995-.482 1.565-.667zm6.728 2.964a7.009 7.009 0 0 0 2.275-1.521 8.376 8.376 0 0 0-1.197-.49 8.853 8.853 0 0 1-.481 1.078 6.688 6.688 0 0 1-.597.933zM8.5 11.909v3.014c.67-.204 1.335-.82 1.887-1.855.143-.268.276-.56.395-.872A12.63 12.63 0 0 0 8.5 11.91zm3.555-.401c.57.185 1.095.409 1.565.667A6.963 6.963 0 0 0 14.982 8.5h-2.49a13.36 13.36 0 0 1-.437 3.008zM14.982 7.5a6.963 6.963 0 0 0-1.362-3.675c-.47.258-.995.482-1.565.667.248.92.4 1.938.437 3.008h2.49zM11.27 2.461c.177.334.339.694.482 1.078a8.368 8.368 0 0 0 1.196-.49 7.01 7.01 0 0 0-2.275-1.52c.218.283.418.597.597.932zm-.488 1.343a7.765 7.765 0 0 0-.395-.872C9.835 1.897 9.17 1.282 8.5 1.077V4.09c.81-.03 1.577-.13 2.282-.287z" />
             </svg>
           </div>
           <div class="row">
-            <h3 class="py-1 text-center">Desarrollo Apps Multiplataforma</h3>
-            <p>Desarrollo, implantación, documentación y mantenimiento de ERPs-CRMs y aplicaciones informáticas multiplataforma
-              utilizando tecnologías y entornos de desarrollo específicos, garantizando el acceso a los datos de forma segura.</p>
+            <h3 class="py-3 text-center">Integración Social</h3>
+            <p>Durante mi formación en Integración Social, adquirí una profunda comprensión de las dinámicas sociales y
+              la importancia de cerrar la brecha digital para garantizar la inclusión de todos los individuos en la
+              sociedad.</p>
           </div>
         </div>
-        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 container">
           <div class="row py-4">
-            <svg role="img" class="bi bi-code-slash" aria-hidden="true" width="150" height="150" fill="currentColor" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-              <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"/>
+            <svg role="img" class="bi bi-laptop" aria-hidden="true" width="150" height="150" fill="currentColor"
+              viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M13.5 3a.5.5 0 0 1 .5.5V11H2V3.5a.5.5 0 0 1 .5-.5h11zm-11-1A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2h-11zM0 12.5h16a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5z" />
+            </svg>
+          </div>
+          <div class="row">
+            <h3 class="py-3 text-center">Desarrollo Apps Multiplataforma</h3>
+            <p>Poseo experiencia en el desarrollo, implementación, documentación y mantenimiento de sistemas ERP-CRM y
+              aplicaciones informáticas multiplataforma. Utilizo tecnologías y entornos de desarrollo específicos para
+              garantizar la seguridad y el acceso a los datos de manera confiable.</p>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 container">
+          <div class="row py-4">
+            <svg role="img" class="bi bi-code-slash" aria-hidden="true" width="150" height="150" fill="currentColor"
+              viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z" />
             </svg>
           </div>
           <div class="row">
             <h3 class="py-3 text-center">Desarrollo Apps Web</h3>
-            <p>Programación, implementación y evaluación de las intervenciones aplicando estrategias y técnicas específicas, promoviendo la igualdad de oportunidades, actuando con respeto y garantizando la creación de entornos seguros.</p>
+            <p>A lo largo de mi trayectoria, he desarrollado, implementado, documentado y mantenido aplicaciones web
+              utilizando tecnologías específicas. Mi enfoque se centra en cumplir con los criterios de accesibilidad,
+              usabilidad y calidad establecidos en los estándares actuales.</p>
           </div>
         </div>
       </div>
@@ -139,10 +196,10 @@
         <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 px-3">
           <h3>Idiomas</h3>
           <ul>
-            <li>Catalán - Nativo</li>
-            <li>Español - Nativo</li>
-            <li>Inglés - C1</li>
-            <li>Lengua de signos Catalana - A1</li>
+            <li>Catalán: Nativo</li>
+            <li>Español: Nativo</li>
+            <li>Inglés: Nivel C1</li>
+            <li>Lengua de signos Catalana: Nivel A1</li>
           </ul>
         </div>
         <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 px-3">
@@ -161,10 +218,10 @@
             <li>Formación EN 301 549 - 2022</li>
             <li>Accesibilidad Audiovisual: las claves del subtitulado y la audiodescripción - CESyA - 2022</li>
             <li>Educar con 3 Cs: capacidades, competencias y corazón - Integratek - 2018</li>
-            <li>Inteligéncias múltiples - Integratek - 2017</li>
+            <li>Inteligencias múltiples - Integratek - 2017</li>
             <li>Coaching para educar - Integratek - 2016</li>
             <li>Resolución de conflictos - Fundació Tripartita - 2015</li>
-            <li>Inteligécia emocional - Fundació Paco Puerto - 2013</li>
+            <li>Inteligencia emocional - Fundació Paco Puerto - 2013</li>
             <li>Teaching Knowledge Test (TKT) - University of Cambridge - 2008</li>
           </ul>
         </div>
@@ -177,9 +234,12 @@
     </svg>
     <section id="curriculum" class="container">
       <h2>
-        <svg role="img" class="mx-auto me-2 mb-3" aria-hidden="true" width="30" height="30" fill="currentColor" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-          <path d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v1.384l7.614 2.03a1.5 1.5 0 0 0 .772 0L16 5.884V4.5A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1h-3zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5z"/>
-          <path d="M0 12.5A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5V6.85L8.129 8.947a.5.5 0 0 1-.258 0L0 6.85v5.65z"/>
+        <svg role="img" class="mx-auto me-2 mb-3" aria-hidden="true" width="30" height="30" fill="currentColor"
+          viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v1.384l7.614 2.03a1.5 1.5 0 0 0 .772 0L16 5.884V4.5A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1h-3zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5z" />
+          <path
+            d="M0 12.5A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5V6.85L8.129 8.947a.5.5 0 0 1-.258 0L0 6.85v5.65z" />
         </svg>
         Experiencia laboral
       </h2>
@@ -187,8 +247,10 @@
         <div>
           <h3 class="py-3">Consultora Accesibilidad y desarrollo accesible</h3>
           <p>Mayo 2022 - Actualidad. MTP (Remoto) </p>
-          <p>Especializada en accesibilidad web, desempeñando tareas de desarrollo y asesoramiento a equipos de desarrollo y QA.</p>
-          <p>Auditorías manuales para webs y apps de TV siguiendo los criterios de las WCAG 2.1. y de la UNE EN-301 549</p>
+          <p>Especializada en accesibilidad web, desempeñando tareas de desarrollo y asesoramiento a equipos de
+            desarrollo y QA.</p>
+          <p>Realización de auditorías manuales para webs y apps de TV, siguiendo los criterios de las WCAG 2.2 y de la
+            UNE EN-301 549.</p>
           <p>Subtitulado de audiovisuales.</p>
           <p>Creación de material para formaciones y realización de las mismas:</p>
           <ul>
@@ -200,8 +262,9 @@
         <div>
           <h3 class="py-3">Consultora Accesibilidad</h3>
           <p>Noviembre 2020 - Abril 2022. TothomWeb (Gerona)</p>
-          <p>Especializada en documentos digitales accesibles desde docuementos de texto a PDFs. Revisión de contraste de color, etiquetado, estructura, orden de lectura y revisión con lector de pantalla.</p>
-          <p>Auditorías de accesibilidad siguiendo los criterios de la WCAG 2.1.</p>
+          <p>Especializada en documentos digitales accesibles desde documentos de texto a PDFs, incluyendo la revisión
+            de contraste de color, etiquetado, estructura, orden de lectura y revisión con lector de pantalla.</p>
+          <p>Realización de auditorías de accesibilidad siguiendo los criterios de la WCAG 2.1.</p>
           <p>Creación de material para formaciones y realización de las mismas:</p>
           <ul>
             <li>Creación de documentos accesibles desde Word y PDF</li>
@@ -212,18 +275,20 @@
         <div>
           <h3 class="py-3">Experiencia laboral anterior</h3>
           <ul>
-            <li>Consultora CRM Salesforce (jul 2018 - Enero 2020) - Hospitalet del Llobregat (Barcelona)</li>
-            <li>Becaria en KLOSIONS TIC (mar 2018 - jun 2018) - Molins de Rei (Barcelona)</li>
-            <li>Recepcionista en la Residència l'Ametlla del Vallès (jun 2008 - ago 2017) - L'Ametlla del Vallès (Barcelona)</li>
+            <li>Consultora CRM Salesforce (julio 2018 - Enero 2020) - Hospitalet del Llobregat (Barcelona)</li>
+            <li>Becaria en KLOSIONS TIC (marzo 2018 - junio 2018) - Molins de Rei (Barcelona)</li>
+            <li>Recepcionista en la Residència l'Ametlla del Vallès (junio 2008 - agosto 2017) - L'Ametlla del Vallès
+              (Barcelona)</li>
             <li>Clases particulares de inglés (2007 - 2017)</li>
             <li>Profesora inglés en Class (2008 - 2012) - L'ametlla del Vallès (Barcelona)</li>
-            <li>Integradora Social en Centro Residencial de Acción Educativa - CRAE Espurna (2009 - 2010) - Rubí (Barcelona)</li>
+            <li>Integradora Social en Centro Residencial de Acción Educativa - CRAE Espurna (2009 - 2010) - Rubí
+              (Barcelona)</li>
             <li>Integradora Social en CEIP Rivo Rubeo (2009 - 2010) - Rubi (Barcelona)</li>
             <li>Profesora inglés en Exit school of English (2008 - 2009) - Palau Solità i Plegamans (Barcelona)</li>
             <li>Au-pair (2006 - 2007) - Londres</li>
           </ul>
         </div>
-      </div>    
+      </div>
     </section>
     <svg role="img" class="separator" aria-hidden="true" viewBox="0 0 500 40">
       <path d="M 0,0 C 150,70 250,-20 500,25 L 500,0 L 0,0" fill="#ADA2FF"></path>
@@ -232,24 +297,109 @@
     </svg>
     <section id="projects" class="container">
       <h2>
-        <svg role="img" class="mx-auto me-2 mb-3" aria-hidden="true" width="30" height="30" fill="currentColor" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-          <path fill-rule="evenodd" d="M6.5 0A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3Zm3 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3Z"/>
-          <path fill-rule="evenodd" d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1A2.5 2.5 0 0 1 9.5 5h-3A2.5 2.5 0 0 1 4 2.5v-1Zm4 5.982c1.664-1.673 5.825 1.254 0 5.018-5.825-3.764-1.664-6.69 0-5.018Z"/>
+        <svg role="img" class="mx-auto me-2 mb-3" aria-hidden="true" width="30" height="30" fill="currentColor"
+          viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd"
+            d="M6.5 0A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3Zm3 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3Z" />
+          <path fill-rule="evenodd"
+            d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1A2.5 2.5 0 0 1 9.5 5h-3A2.5 2.5 0 0 1 4 2.5v-1Zm4 5.982c1.664-1.673 5.825 1.254 0 5.018-5.825-3.764-1.664-6.69 0-5.018Z" />
         </svg>
         Proyectos
       </h2>
-      <div class="row pt-5">
+      <article aria-labelledby="titlePosts" class="row pt-5">
+        <h3 id="titlePosts">Posts</h3>
         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
           <ul>
-            <li><a href="https://mel-caballero.github.io/guide/">Guía de accesibilidad</a></li>
-            <li><a href="https://mel-caballero.github.io/subtitles/">Generador de talls de subtítols</a></li>
-            <li><a href="https://www.mtp.es/blog/experiencia-de-usuario-blog/19-de-mayo-dia-mundial-de-concienciacion-sobre-accesibilidad/">Post MPT - 19 de mayo, Día Mundial de Concienciación sobre Accesibilidad (19 mayo, 2022)</a></li>
-            <li><a href="https://www.mtp.es/blog/experiencia-de-usuario-blog/la-accesibilidad-objetivo-tambien-en-dispositivos-de-television/">Post MPT - La accesibilidad, objetivo también en dispositivos de televisión (13 octubre, 2022)</a></li>
-            <li><a href="https://www.mtp.es/blog/experiencia-de-usuario-blog/como-asegurar-la-creacion-de-contenido-dinamico-a-traves-de-codigo-para-que-sea-accesible/">Post MPT - Cómo asegurar la creación de contenido dinámico a través de código para que sea accesible (3 noviembre, 2022)</a></li>
-            <li><a href="https://www.mtp.es/blog/experiencia-de-usuario-blog/mtp-imparte-formacion-concienciar-extender-buenas-practicas-accesibilidad-digital/">Post MPT - MTP imparte formación interna para concienciar y extender buenas prácticas sobre accesibilidad digital (19 mayo, 2023)</a></li>
+            <li><a
+                href="https://www.mtp.es/blog/experiencia-de-usuario-blog/exito-participacion-webinar-mtp-accesibilidad-digital/">Post
+                MTP (mención) - Éxito de participación en el Webinar de MTP sobre accesibilidad digital (13 febrero,
+                2024)</a></li>
+            <li><a
+                href="https://www.mtp.es/blog/experiencia-de-usuario-blog/pautas-para-conseguir-correos-electronicos-accesibles-para-todos-los-destinatarios/">Post
+                MTP - Pautas para conseguir correos electrónicos accesibles para todos los destinatarios (1 febrero,
+                2024)</a></li>
+            <li><a
+                href="https://www.mtp.es/blog/experiencia-de-usuario-blog/mtp-presentara-las-ultimas-novedades-y-tendencias-sobre-accesibilidad-digital-en-un-webinar-el-proximo-8-de-febrero/">Post
+                MTP (mención) - MTP presentará las últimas novedades y tendencias sobre accesibilidad digital en un
+                webinar el próximo 8 de febrero (18 enero, 2024)</a></li>
+            <li><a
+                href="https://www.mtp.es/blog/experiencia-de-usuario-blog/el-sistema-braille-una-gran-aportacion-para-mejorar-la-accesibilidad-a-personas-con-discapacidad-visual/">Post
+                MTP (en colaboración con Jesús Pavón y Beatriz Lucas)- El sistema Braille, una gran aportación para
+                mejorar la accesibilidad a personas con discapacidad visual (4 enero, 2024)</a></li>
+            <li><a
+                href="https://www.mtp.es/blog/noticias-mtp/conocimiento-concienciacion-sobre-accesibilidad-digital-objetivo-cumplido-webinar-de-mtp/">Post
+                MTP (mención) - Un mayor conocimiento y concienciación sobre accesibilidad digital, sus normas y
+                estándares, objetivo cumplido del webinar de MTP (3 julio, 2023)</a></li>
+            <li><a
+                href="https://www.mtp.es/blog/experiencia-de-usuario-blog/el-impacto-de-la-normativa-de-accesibilidad-en-paginas-web-y-apps-explicado-por-destacados-expertos/">Post
+                MTP (mención)- El impacto de la normativa de accesibilidad en páginas web y apps, explicado por
+                destacados expertos (26 junio, 2023)</a></li>
+            <li><a
+                href="https://www.mtp.es/blog/experiencia-de-usuario-blog/mtp-imparte-formacion-concienciar-extender-buenas-practicas-accesibilidad-digital/">Post
+                MTP - MTP imparte formación interna para concienciar y extender buenas prácticas sobre accesibilidad
+                digital (19 mayo, 2023)</a></li>
+            <li><a
+                href="https://www.mtp.es/blog/experiencia-de-usuario-blog/mtp-imparte-formacion-concienciar-extender-buenas-practicas-accesibilidad-digital/">Post
+                MTP - MTP imparte formación interna para concienciar y extender buenas prácticas sobre accesibilidad
+                digital (19 mayo, 2023)</a></li>
+            <li><a
+                href="https://www.mtp.es/blog/experiencia-de-usuario-blog/como-asegurar-la-creacion-de-contenido-dinamico-a-traves-de-codigo-para-que-sea-accesible/">Post
+                MTP - Cómo asegurar la creación de contenido dinámico a través de código para que sea accesible (3
+                noviembre, 2022)</a></li>
+            <li><a
+                href="https://www.mtp.es/blog/experiencia-de-usuario-blog/la-accesibilidad-objetivo-tambien-en-dispositivos-de-television/">Post
+                MTP - La accesibilidad, objetivo también en dispositivos de televisión (13 octubre, 2022)</a></li>
+            <li><a
+                href="https://www.mtp.es/blog/experiencia-de-usuario-blog/19-de-mayo-dia-mundial-de-concienciacion-sobre-accesibilidad/">Post
+                MTP - 19 de mayo, Día Mundial de Concienciación sobre Accesibilidad (19 mayo, 2022)</a></li>
           </ul>
         </div>
-      </div>
+      </article>
+      <article aria-labelledby="titleCodePens">
+        <h3 id="titleCodePens">CodePens</h3>
+        <div class="row">
+          <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 p-3">
+            <p class="codepen" data-height="300" data-theme-id="dark" data-default-tab="result" data-slug-hash="poGMPxG"
+              data-user="mel-caballero"
+              style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+              <span>See the Pen <a href="https://codepen.io/mel-caballero/pen/poGMPxG">
+                  Inputs árbol de decisiones</a> by Melanie (<a
+                  href="https://codepen.io/mel-caballero">@mel-caballero</a>)
+                on <a href="https://codepen.io">CodePen</a>.</span>
+            </p>
+          </div>
+          <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 p-3">
+            <p class="codepen" data-height="300" data-theme-id="dark" data-default-tab="result" data-slug-hash="GRzVwPw"
+              data-user="mel-caballero"
+              style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+              <span>See the Pen <a href="https://codepen.io/mel-caballero/pen/GRzVwPw">
+                  Etiquetas accesibilidad para PDFs</a> by Melanie (<a
+                  href="https://codepen.io/mel-caballero">@mel-caballero</a>)
+                on <a href="https://codepen.io">CodePen</a>.</span>
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 p-3">
+            <p class="codepen" data-height="300" data-theme-id="dark" data-default-tab="result" data-slug-hash="qBgVGYv"
+              data-user="mel-caballero"
+              style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+              <span>See the Pen <a href="https://codepen.io/mel-caballero/pen/qBgVGYv">
+                  Focus</a> by Melanie (<a href="https://codepen.io/mel-caballero">@mel-caballero</a>)
+                on <a href="https://codepen.io">CodePen</a>.</span>
+            </p>
+          </div>
+          <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 p-3">
+            <p class="codepen" data-height="300" data-theme-id="dark" data-default-tab="result" data-slug-hash="dyaZERr"
+              data-user="mel-caballero"
+              style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+              <span>See the Pen <a href="https://codepen.io/mel-caballero/pen/dyaZERr">
+                  Skip to content</a> by Melanie (<a href="https://codepen.io/mel-caballero">@mel-caballero</a>)
+                on <a href="https://codepen.io">CodePen</a>.</span>
+            </p>
+          </div>
+        </div>
+      </article>
     </section>
     <svg role="img" class="separator" aria-hidden="true" viewBox="0 0 500 40">
       <path d="M 0,0 C 150,70 250,-20 500,25 L 500,0 L 0,0" fill="#ADA2FF"></path>
@@ -258,45 +408,52 @@
     </svg>
     <section id="events" class="container pb-5">
       <h2>
-        <svg role="img" class="d-inline mx-auto me-2 mb-3" aria-hidden="true" width="30" height="30" fill="currentColor" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-          <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z"/>
-          <path d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z"/>
+        <svg role="img" class="d-inline mx-auto me-2 mb-3" aria-hidden="true" width="30" height="30" fill="currentColor"
+          viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+          <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z" />
+          <path
+            d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z" />
         </svg>
         Eventos
       </h2>
       <div class="row">
         <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 px-3">
-          <h3>TotoConf - 2020</h3>
-          <p>(Enlace a Youtube)</p>
-          <a class="btn btn-link btn-floating btn-lg text-white m-1" 
-            href="https://youtu.be/2_tEH11spY0" 
-            aria-label="Totoconf - La accesibilidad mola papo">
-            <img class="border border-5 border-dark" src="img/totoconf.jpg" width="100%" alt="">
-          </a>      
+          <h3>Webinar - ¿Cómo impacta la nueva normativa de accesibilidad digital en tu empresa? - 2023</h3>
+          <a class="btn btn-link btn-floating btn-lg text-white m-1"
+            href="https://www.mtp.es/blog/experiencia-de-usuario-blog/el-impacto-de-la-normativa-de-accesibilidad-en-paginas-web-y-apps-explicado-por-destacados-expertos/"
+            aria-label="La accesibilidad a blogs y redes sociales">
+            <img class="border border-5 border-dark" src="img/evento mtp junio 2023.png" width="100%" alt="">
+          </a>
+          <a
+            href="https://www.mtp.es/blog/noticias-mtp/conocimiento-concienciacion-sobre-accesibilidad-digital-objetivo-cumplido-webinar-de-mtp/">Post
+            MTP - Un mayor conocimiento y concienciación sobre accesibilidad digital, sus normas y estándares, objetivo
+            cumplido del webinar de MTP (3 julio, 2023)</a>
         </div>
         <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 px-3">
-          <h3>Podcast Somos tecnológicos - 2020</h3>
-          <p>(Enlace a ivoox)</p>
-          <a class="btn btn-link btn-floating btn-lg text-white m-1" 
-            href="https://www.ivoox.com/026-somos-tecnologicas-26-05-21-audios-mp3_rf_70575082_1.html" 
-            aria-label="Podcast Somos Tecnológicos programa 26">
-            <img class="border border-5 border-dark" src="img/somos_tecnologicos.jpeg" width="60%" alt="">
+          <h3>Webinar - ¿Quieres conocer las últimas novedades en materia de accesibilidad? - 2024</h3>
+          <a class="btn btn-link btn-floating btn-lg text-white m-1"
+            href="https://www.mtp.es/blog/experiencia-de-usuario-blog/el-impacto-de-la-normativa-de-accesibilidad-en-paginas-web-y-apps-explicado-por-destacados-expertos/"
+            aria-label="La accesibilidad a blogs y redes sociales">
+            <img class="border border-5 border-dark" src="img/evento mtp febrero 2024.webp" width="100%" alt="">
           </a>
+          <a
+            href="https://www.mtp.es/blog/experiencia-de-usuario-blog/exito-participacion-webinar-mtp-accesibilidad-digital/">Post
+            MTP - Éxito de participación en el Webinar de MTP sobre accesibilidad digital (13 febrero, 2024)</a>
         </div>
       </div>
       <div class="row">
         <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 px-3">
           <h3>Terrassa tria futur - 2021</h3>
-          <a class="btn btn-link btn-floating btn-lg text-white m-1" 
-            href="https://triafutur.terrassa.cat/es/project/laccessibilitat-a-blogs-i-xarxes-socials/" 
+          <a class="btn btn-link btn-floating btn-lg text-white m-1"
+            href="https://triafutur.terrassa.cat/es/project/laccessibilitat-a-blogs-i-xarxes-socials/"
             aria-label="La accesibilidad a blogs y redes sociales">
             <img class="border border-5 border-dark" src="img/terrassa_tria_futur.png" width="100%" alt="">
-          </a>      
+          </a>
         </div>
         <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 px-3">
           <h3>Terrassa innovació - 2021</h3>
-          <a class="btn btn-link btn-floating btn-lg text-white m-1" 
-            href="https://terrassainnovacio.cat/es/laccessibilitat-a-la-comunicacio/" 
+          <a class="btn btn-link btn-floating btn-lg text-white m-1"
+            href="https://terrassainnovacio.cat/es/laccessibilitat-a-la-comunicacio/"
             aria-label="La accesibilidad en la comunicación">
             <img class="border border-5 border-dark" src="img/terrassa_innovacio.png" width="60%" alt="">
           </a>
@@ -304,15 +461,21 @@
       </div>
       <div class="row">
         <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 px-3">
-          <h3>Webinar - ¿Cómo impacta la nueva normativa de accesibilidad digital en tu empresa? - 2023</h3>
-          <a class="btn btn-link btn-floating btn-lg text-white m-1" 
-            href="https://www.mtp.es/blog/experiencia-de-usuario-blog/el-impacto-de-la-normativa-de-accesibilidad-en-paginas-web-y-apps-explicado-por-destacados-expertos/" 
-            aria-label="La accesibilidad a blogs y redes sociales">
-            <img class="border border-5 border-dark" src="img/evento mtp junio 2023.png" width="100%" alt="">
+          <h3>TotoConf - 2020</h3>
+          <p>(Enlace a Youtube)</p>
+          <a class="btn btn-link btn-floating btn-lg text-white m-1" href="https://youtu.be/2_tEH11spY0"
+            aria-label="Totoconf - La accesibilidad mola papo">
+            <img class="border border-5 border-dark" src="img/totoconf.jpg" width="100%" alt="">
           </a>
-          <a href="https://www.mtp.es/blog/noticias-mtp/conocimiento-concienciacion-sobre-accesibilidad-digital-objetivo-cumplido-webinar-de-mtp/">Post MTP - Un mayor conocimiento y concienciación sobre accesibilidad digital, sus normas y estándares, objetivo cumplido del webinar de MTP (3 julio, 2023)</a>
         </div>
         <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 px-3">
+          <h3>Podcast Somos tecnológicos - 2020</h3>
+          <p>(Enlace a ivoox)</p>
+          <a class="btn btn-link btn-floating btn-lg text-white m-1"
+            href="https://www.ivoox.com/026-somos-tecnologicas-26-05-21-audios-mp3_rf_70575082_1.html"
+            aria-label="Podcast Somos Tecnológicos programa 26">
+            <img class="border border-5 border-dark" src="img/somos_tecnologicos.jpeg" width="60%" alt="">
+          </a>
         </div>
       </div>
     </section>
@@ -326,68 +489,54 @@
           <nav aria-label="Enlaces de contacto">
             <ul class="nav justify-content-center">
               <li class="nav-item">
-                <a class="btn btn-link btn-floating btn-lg text-white m-1" href="mailto:melanie.caballero.pastor@gmail.com" title="Escríbeme un mail">
-                <svg role="img" class="d-block mx-auto mb-1" aria-hidden="true" width="40" height="40" fill="currentColor" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
-                </svg>
-              </a>
-              </li>
-              <li class="nav-item">
-                <a class="btn btn-link btn-floating btn-lg text-white m-1" href="https://twitter.com/Mel__Caballero" title="Sígueme en Twitter">
-                <svg role="img" class="d-block mx-auto mb-1" aria-hidden="true" width="40" height="40" fill="currentColor" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
-                </svg>
-              </a>
-              </li>
-              <li class="nav-item">
-                <a class="btn btn-link btn-floating btn-lg text-white m-1" href="https://www.linkedin.com/in/melaniecaballeropastor/" title="Agregame a Linkedin">
-                <svg role="img" class="d-block mx-auto mb-1" aria-hidden="true" width="40" height="40" fill="currentColor" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
-                </svg>
-              </a>
-              </li>
-              <li class="nav-item">
-                <a class="btn btn-link btn-floating btn-lg text-white m-1" href="https://github.com/mel-caballero" title="Visita mi repositorio en Github">
-                <svg role="img" class="d-block mx-auto mb-1" aria-hidden="true" width="40" height="40" fill="currentColor" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-                </svg>
-              </a>
-              </li>
-              <li class="nav-item">
-                <a class="btn btn-link btn-floating btn-lg text-white m-1" href="https://www.instagram.com/mel__caballero/" title="Sígueme en Instagram">
-                <svg role="img" class="d-block mx-auto mb-1" aria-hidden="true" width="40" height="40" fill="currentColor" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
-                </svg>
-              </a>
-              </li>
-              <li class="nav-item">
-                <a class="btn btn-link btn-floating btn-lg text-white m-1" href="https://t.me/Mel_Caballero" title="Escríbeme por Telegram">
-                <svg role="img" class="d-block mx-auto mb-1" aria-hidden="true" width="40" height="40" fill="currentColor" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z"/>
-                </svg>
-              </a>
-              </li>
-              <li class="nav-item">
-                <a class="d-none btn btn-link btn-floating btn-lg text-white m-1" href="https://www.twitch.tv/mel__caballero" title="Sígueme en Twitch">
-                <svg role="img" class="d-block mx-auto mb-1" aria-hidden="true" width="40" height="40" fill="currentColor" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M3.857 0 1 2.857v10.286h3.429V16l2.857-2.857H9.57L14.714 8V0H3.857zm9.714 7.429-2.285 2.285H9l-2 2v-2H4.429V1.143h9.142v6.286z"/>
-                  <path d="M11.857 3.143h-1.143V6.57h1.143V3.143zm-3.143 0H7.571V6.57h1.143V3.143z"/>
-                </svg>
-              </a>
-              </li>
-              <li class="nav-item">
-                <a class="d-none btn btn-link btn-floating btn-lg text-white m-1" href="" title="Agregame en Discord">
-                  <svg role="img" class="d-block mx-auto mb-1" aria-hidden="true" width="40" height="40" fill="currentColor" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M13.545 2.907a13.227 13.227 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.19 12.19 0 0 0-3.658 0 8.258 8.258 0 0 0-.412-.833.051.051 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.041.041 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032c.001.014.01.028.021.037a13.276 13.276 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019c.308-.42.582-.863.818-1.329a.05.05 0 0 0-.01-.059.051.051 0 0 0-.018-.011 8.875 8.875 0 0 1-1.248-.595.05.05 0 0 1-.02-.066.051.051 0 0 1 .015-.019c.084-.063.168-.129.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.052.052 0 0 1 .053.007c.08.066.164.132.248.195a.051.051 0 0 1-.004.085 8.254 8.254 0 0 1-1.249.594.05.05 0 0 0-.03.03.052.052 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.235 13.235 0 0 0 4.001-2.02.049.049 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.034.034 0 0 0-.02-.019Zm-8.198 7.307c-.789 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612Zm5.316 0c-.788 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612Z"/>
+                <a class="btn btn-link btn-floating btn-lg text-white m-1"
+                  href="mailto:melanie.caballero.pastor@gmail.com" title="Escríbeme un mail">
+                  <svg role="img" class="d-block mx-auto mb-1" aria-hidden="true" width="40" height="40"
+                    fill="currentColor" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z" />
                   </svg>
                 </a>
               </li>
               <li class="nav-item">
-                <a class="d-none btn btn-link btn-floating btn-lg text-white m-1" href="https://www.youtube.com/channel/UCbv7Fb0Nc0n2z21Usknu2XQ" title="Sígueme en Youtube">
-                <svg role="img" class="d-block mx-auto mb-1" aria-hidden="true" width="40" height="40" fill="currentColor" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
-                </svg>
-              </a>
+                <a class="btn btn-link btn-floating btn-lg text-white m-1"
+                  href="https://www.linkedin.com/in/melaniecaballeropastor/" title="Agregame a Linkedin">
+                  <svg role="img" class="d-block mx-auto mb-1" aria-hidden="true" width="40" height="40"
+                    fill="currentColor" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                  </svg>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="btn btn-link btn-floating btn-lg text-white m-1" href="https://github.com/mel-caballero"
+                  title="Visita mi repositorio en Github">
+                  <svg role="img" class="d-block mx-auto mb-1" aria-hidden="true" width="40" height="40"
+                    fill="currentColor" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                  </svg>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="btn btn-link btn-floating btn-lg text-white m-1"
+                  href="https://www.instagram.com/mel__caballero/" title="Sígueme en Instagram">
+                  <svg role="img" class="d-block mx-auto mb-1" aria-hidden="true" width="40" height="40"
+                    fill="currentColor" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                  </svg>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="btn btn-link btn-floating btn-lg text-white m-1" href="https://t.me/Melanie_Caballero"
+                  title="Escríbeme por Telegram">
+                  <svg role="img" class="d-block mx-auto mb-1" aria-hidden="true" width="40" height="40"
+                    fill="currentColor" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z" />
+                  </svg>
+                </a>
               </li>
             </ul>
           </nav>
@@ -397,19 +546,22 @@
   </footer>
   <div id="back2top" class="nav-item">
     <a class="btn btn-link btn-floating btn-lg main-color" href="#top" aria-label="Volver a inicio">
-      <svg role="img" class="bi bi-arrow-up-circle-fill" aria-hidden="true" width="40" height="40" fill="currentColor" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-        <path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
+      <svg role="img" class="bi bi-arrow-up-circle-fill" aria-hidden="true" width="40" height="40" fill="currentColor"
+        viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z" />
       </svg>
     </a>
   </div>
- <!-- JavaScript Bootstrap v. 5.3.0. Bundle with Popper -->
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  <!-- JavaScript Bootstrap v. 5.3.3 Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
   <script>
     // Get the button:
     let back2top = document.getElementById("back2top");
 
     // When the user scrolls down 20px from the top of the document, show the button
-    window.onscroll = function() {scrollFunction()};
+    window.onscroll = function () { scrollFunction() };
 
     function scrollFunction() {
       if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -426,4 +578,5 @@
     }
   </script>
 </body>
+
 </html>
