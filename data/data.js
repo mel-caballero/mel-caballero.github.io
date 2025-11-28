@@ -1,8 +1,8 @@
 const temas = {
   "tema": [
     { "titulo": "Sobre mi", "ruta": "assets/", "nombre": "sobre-mi" },
-    { "titulo": "Mis 3 pilares", "ruta": "assets/", "nombre": "mis-3-pilares" },
-    { "titulo": "Proyectos", "ruta": "assets/", "nombre": "proyectos" },
-    { "titulo": "Eventos", "ruta": "assets/", "nombre": "eventos" },
+    { "titulo": "Mis bases", "ruta": "assets/", "nombre": "mis-bases" },
+    { "titulo": "Formación", "ruta": "assets/", "nombre": "formacion" },
+    { "titulo": "Experiencia", "ruta": "assets/", "nombre": "experiencia" },
   ]
 };
